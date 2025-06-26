@@ -278,7 +278,7 @@ async def terminal_query(request: Request):
 
     try:
         client = get_gemini_client()
-        model = "gemini-1.5-flash-latest"  # Use "gemini-1.5-pro-latest" for better results
+        model = "gemini-2.0-flash-lite"  # Use "gemini-1.5-pro-latest" for better results
         contents = [
             types.Content(role="user", parts=[types.Part.from_text(AKASH_RESUME + "\n\n" + user_input)])
         ]
