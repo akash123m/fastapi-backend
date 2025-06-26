@@ -1,3 +1,7 @@
 #!/bin/bash
+
+# Remove any conflicting google package
 pip uninstall -y google || true
-pip install google-generativeai
+
+# Install dependencies explicitly
+pip install fastapi uvicorn python-dotenv google-generativeai
