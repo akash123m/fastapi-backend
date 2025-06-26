@@ -4,7 +4,7 @@ from fastapi.responses import StreamingResponse, HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from dotenv import load_dotenv
-from google import genai
+import google.generativeai as genai
 from google.genai import types
 
 # Load environment variables
