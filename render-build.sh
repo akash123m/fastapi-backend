@@ -4,4 +4,5 @@
 pip uninstall -y google || true
 
 # Install everything cleanly and explicitly
-pip install --no-cache-dir fastapi uvicorn python-dotenv google-generativeai
+pip install --no-cache-dir fastapi uvicorn python-dotenv google-generativeai==0.3.2
+
